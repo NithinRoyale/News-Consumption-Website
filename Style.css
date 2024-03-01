@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    position: relative;
+    background-color: rgb(183, 245, 245);
+    background: linear-gradient(to right,white, rgb(127, 239, 239));
+}
+
+
+
+nav {
+    background-color: rgb(0, 198, 178);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    max-width: 900px;
+    margin-bottom: 30px;
+    height: 80px;
+}
+
+.navbar .logo {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+/* .logo :active{
+    color: blue;
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+} */
+
+
+.sidebar {
+    width: 78px;
+    max-height: 70%;
+
+    position: fixed;
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    margin-top: -25px;
+    /* margin-right: 50px; */
+    /* padding-right: 50px; */
+
+    background-color: rgb(0, 198, 178);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.sidebar-icons{
+    height: 72.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    transition: opacity 500ms;
+    transition: box-shadow 300ms;
+}
+
+.sidebar-icons:hover{
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+    opacity: .96;
+}
+
+.sidebar-icons:active {
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+    opacity: .8;
+    font-size: 14px;
+}
+
+
+
+.sidebar-icons-c {
+    height: 72.5px;
+    text-align: center;
+    padding-top:10px ;
+    cursor: pointer;
+    padding-left: -4px;
+
+    transition: opacity 500ms;
+    transition: box-shadow 300ms;
+}
+
+.sidebar-icons-c :hover{
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+    opacity: .96;
+}
+
+.moreContent {
+    border: none;
+}
+
+
+.dropdown {
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    border: none ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 198, 178);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content div:hover {
+    background-color: rgba(0, 149, 134, 0.96);
+    /* background-color: rgb(2, 106, 96); */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+/* .dropdown:hover .sidebar-icons-c{
+    background-color: #3e8e41;
+} */
+
+
+
+#search-input {
+    max-width: 400px;
+    height: 30px;
+    padding: 10px  20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(2, 106, 96);
+    outline: none;
+
+        
+}
+
+/* #search-input :active{
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+} */
+
+#search-button {
+    padding: 7px 15px;
+    background-color:  rgb(2, 106, 96);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-right: 10px;
+    transition: font-size 500ms;
+    transition: box-shadow 300ms;
+
+       
+}
+
+#search-button:hover {
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#search-button:active {
+    opacity: .8;
+    font-size: 14px;
+
+}
+
+#blog-container {
+    margin: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    
+}
+
+.blog-card {
+    width: 280px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 20px;
+    margin-right: 5px;
+
+    transition: opacity 500ms;
+    transition: box-shadow 300ms;
+    transition: transform 500ms;
+
+}
+
+.blog-card:hover {
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+    opacity: .96;
+    /* width: 300px;
+    font-size: 35px; */
+    transform: scale(1.06);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    
+}
+
+.blog-card h2 {
+    color: black;
+    font-weight:500;
+    font-size: 30px;
+}
+
+.blog-card p {
+    font-size: 15px;
+    color: rgb(50, 46, 46);
+    padding-top: 10px;
+}
+
+
+
+
+@media(max-width:500px)
+{
+
+    nav {
+        padding-right: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 1.8rem;
+    }
+
+    #search-input {
+        width: 100px ;
+        padding: 10px 10px;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+}

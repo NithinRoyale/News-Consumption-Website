@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API PROJECT</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+   
+    
+    <nav>
+        <div class="navbar  ">
+            <a class="logo" href="Main.html">NEWS.</a>
+
+            <div class="search-container">
+                <input type="text"  id="search-input" placeholder="Enter the Article name here">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        
+            <div class="sidebar-icons" data-query="Business">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4.615 20q-.69 0-1.152-.462Q3 19.075 3 18.385v-9.77q0-.69.463-1.152Q3.925 7 4.615 7H9V5.615q0-.69.463-1.152Q9.925 4 10.615 4h2.77q.69 0 1.153.463q.462.462.462 1.152V7h4.385q.69 0 1.152.463q.463.462.463 1.152v9.77q0 .69-.462 1.152q-.463.463-1.153.463zM10 7h4V5.615q0-.23-.192-.423Q13.615 5 13.385 5h-2.77q-.23 0-.423.192q-.192.193-.192.423zm10 7.5h-6V16h-4v-1.5H4v3.885q0 .23.192.423q.193.192.423.192h14.77q.23 0 .423-.192q.192-.193.192-.423zm-9 .5h2v-2h-2zm-7-1.5h6V12h4v1.5h6V8.615q0-.23-.192-.423Q19.615 8 19.385 8H4.615q-.23 0-.423.192Q4 8.385 4 8.615zm8 .5"/></svg>
+                <div>Business</div>
+            
+        </div>
+        
+        
+        <div class="sidebar-icons" data-query="Tech">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 21 21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.485h11a1 1 0 0 1 1 1V13.5h-13V5.485a1 1 0 0 1 1-1M3.118 17.5h13.764a1 1 0 0 0 .894-1.447L16.5 13.5h-13l-1.276 2.553a1 1 0 0 0 .894 1.447"/></svg>
+            <div>Tech</div>
+        </div>
+        
+        
+        
+        <div class="sidebar-icons" data-query="Games">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><g fill="black"><path d="M11.5 6.027a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117c.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772c.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773c-.245-.232-.496-.526-.739-.808c-.126-.148-.25-.292-.368-.423c-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423c-.243.282-.494.575-.739.808c-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21c.024-.826.16-1.73.365-2.606c.206-.875.486-1.733.805-2.466c.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708c-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295a12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502c.212-.202.4-.423.615-.674c.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504c.214.251.403.472.615.674c.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406a14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465c-.264-.265-.856-.523-1.733-.708c-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/></g></svg>
+            <div>Games</div>
+        </div>
+
+        <div class="sidebar-icons" data-query="Movies">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" d="M16.13 5.38L7.038 8h9.46a.5.5 0 0 1 .5.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 3 15.5V8.571l-.257-.893a2.5 2.5 0 0 1 1.71-3.095L13.1 2.09a2.5 2.5 0 0 1 3.095 1.71l.277.96a.5.5 0 0 1-.342.62M3.84 7.88l.607-.175L5.889 5.21l-1.16.335A1.5 1.5 0 0 0 3.703 7.4zm1.992-.574l2.12-.612l1.443-2.497l-2.125.613a.51.51 0 0 1-.021.042zm5.627-1.622l1.442-2.498l-2.126.613a.517.517 0 0 1-.026.053L9.34 6.296zm2.684-2.652a.54.54 0 0 1-.02.036l-1.279 2.216l2.527-.728l-.139-.48a1.5 1.5 0 0 0-1.09-1.044M4 9v6.5A1.5 1.5 0 0 0 5.5 17h9a1.5 1.5 0 0 0 1.5-1.5V9z"/></svg>
+            <div>Movies</div>
+        </div>
+
+        <div class="sidebar-icons" data-query="Cricket">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 64 64"><path fill="black" d="m48.279 42.588l1.252 1.254l-.947.949l-1.548-1.547a8.93 8.93 0 0 0-1.088.811l12.864 12.863c.301-.348.572-.709.811-1.088l-1.549-1.547l.951-.949l1.254 1.254c1.443-3.336.809-7.355-1.918-10.082s-6.746-3.36-10.082-1.918m1.252 3.152l.95-.949l1.897 1.899l-.947.95zm2.848 2.848l.951-.947l1.896 1.897l-.947.948zm4.748 4.746l-1.9-1.898l.95-.949l1.897 1.898zm-12.939-7.242l1.549 1.549l-.95.947l-1.254-1.254c-1.443 3.337-.81 7.357 1.917 10.083s6.746 3.359 10.083 1.916L54.28 58.08l.947-.95l1.549 1.548c.378-.238.74-.51 1.088-.811L44.998 45.003c-.3.348-.57.71-.81 1.089m10.091 10.09l-.949.948l-1.898-1.897l.947-.949zm-2.847-2.848l-.95.949l-1.897-1.898l.947-.949zm-2.848-2.848l-.951.949l-1.896-1.897l.947-.95zm1.836-25.14c0-.506-.201-.992-.561-1.35l-2.066-2.068c-.01-.085-.027-.168-.028-.255a2.62 2.62 0 0 1 .769-1.906L62 6.299l-.109-.401a5.337 5.337 0 0 0-1.381-2.403a5.362 5.362 0 0 0-2.4-1.383L57.707 2l-13.47 13.471c-.572.572-1.394.801-2.188.713l-2.041-2.04a1.907 1.907 0 0 0-2.699 0L2.831 48.622c-.754.754-1.379 2.2-.077 4.808c.71 1.42 1.903 3.004 3.36 4.461c.964.963 4.328 4.109 7.145 4.109c1.07 0 1.745-.45 2.123-.828l34.477-34.477c.36-.358.561-.843.561-1.349m-5.17-8.863L57.008 4.725c.489.218.951.516 1.354.918c.402.402.698.864.916 1.353L47.521 18.754a4.021 4.021 0 0 0-1.049 1.833l-.033-.013l-3.011-3.012l-.013-.03a4.023 4.023 0 0 0 1.835-1.049M4.52 49.633l34.138-34.139l4.566 4.564L13.67 49.613c-.681.681-2.181 1.372-3.144 1.302c-1.395-.104-6.006-1.282-6.006-1.282m9.852 9.851s-1.178-4.61-1.281-6.009c-.071-.96.621-2.462 1.301-3.142c7.387-7.391 29.554-29.555 29.554-29.555l4.563 4.566z"/></svg>
+            <div>Cricket</div>
+        </div>
+
+        <div class="sidebar-icons" data-query="Vehicle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20"><path fill="black" d="M5.518 6.026L4.86 8H8V5H6.942a1.5 1.5 0 0 0-1.424 1.026M4.528 9l-.004.01l-.266.066l-.122.03A1.5 1.5 0 0 0 3 10.562v1.688c0 .16.05.31.137.432A2.501 2.501 0 0 1 7.95 13h4.1a2.5 2.5 0 0 1 4.813-.318a.746.746 0 0 0 .137-.432v-1.213a1.5 1.5 0 0 0-1.114-1.45L13.686 9zm8.345-1l-1.239-2.228A1.5 1.5 0 0 0 10.324 5H9v3zM18 12.25a1.75 1.75 0 0 1-1.023 1.592A2.5 2.5 0 0 1 12.05 14h-4.1a2.5 2.5 0 0 1-4.927-.158A1.75 1.75 0 0 1 2 12.25v-1.688a2.5 2.5 0 0 1 1.747-2.384l.823-2.469A2.5 2.5 0 0 1 6.942 4h3.381a2.5 2.5 0 0 1 2.186 1.286l1.542 2.777l2.093.558A2.5 2.5 0 0 1 18 11.037zM5.5 12a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3m9 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3"/></svg>
+            <div>Auto</div>
+        </div>
+
+        <div class="sidebar-icons-c" >
+            <div class="dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 3a3 3 0 1 0 6 0a3 3 0 1 0-6 0" />
+                </svg>
+
+                <div class="moreContent">More category</div>
+                <div class="dropdown-content">
+                    <div data-query="entertainment">Entertainment</div>
+                    <div data-query="bike">Bike</div>
+                    <div data-query="military">Military</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- <div class="sidebar-icons-category">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 3a3 3 0 1 0 6 0a3 3 0 1 0-6 0"/></svg>
+            <div>category</div>
+        </div> -->
+
+    </div>  
+
+    <main id="blog-container">
+        <!-- <div class="blog-card">
+            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg" width="400">
+            <h2>this is title</h2>
+            <p>A DREAM written down with a date becomes a GOAL</p>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg" width="400">
+            <h2>this is title</h2>
+            <p>A DREAM written down with a date becomes a GOAL</p>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg" width="400">
+            <h2>this is title</h2>
+            <p>A DREAM written down with a date becomes a GOAL</p>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg" width="400">
+            <h2>this is title</h2>
+            <p>A DREAM written down with a date becomes a GOAL</p>
+        </div> -->
+
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>
