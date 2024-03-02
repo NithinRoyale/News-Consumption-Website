@@ -115,18 +115,20 @@ function displayBlog (articles){
  
 
 sidebarIcons.forEach(icon => {
-    icon.addEventListener('click', async () => {
-        
-        const query = icon.getAttribute('data-query').trim();
-        
-        try {
-            const articles = await fetchnewsquery(query);
-            displayBlog(articles);
-        } catch(error) {
-            console.log(`Error fetching ${query} news:`, error);
-        }
-    });
+    if (icon.getAttribute('data-query')) {
+        icon.addEventListener('click', async () => {
+            const query = icon.getAttribute('data-query').trim();
+            
+            try {
+                const articles = await fetchnewsquery(query);
+                displayBlog(articles);
+            } catch(error) {
+                console.log(`Error fetching ${query} news:`, error);
+            }
+        });
+    }
 });
+
 
 const dropdownLinks = document.querySelectorAll('.dropdown-content div');
 
