@@ -4,7 +4,7 @@ This project is a simple news blog website that allows users to search for news 
 
 ## Hosted Link
 
-You can access the hosted version of the website [News Blog Website](https://your-username.github.io/News-Blog-Website/).
+You can access the hosted version of the website [News Blog Website]([https://your-username.github.io/News-Blog-Website/](https://nithinroyale.github.io/News-Consumption-Website/)).
 
 ## Features
 
